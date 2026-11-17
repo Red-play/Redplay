@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a0809">
-<meta name="description" content="RedPlay منصة عربية لاكتشاف الألعاب وتصفح مكتبة متنوعة بسهولة، مع تفاصيل الألعاب وروابط الوصول إليها وتحديثات مستمرة.">
-<title>RedPlay | بوابة الألعاب</title>
+<meta name="description" content="RedPlay — اكتشف الألعاب، تصفح مكتبة متنوعة، واستمتع بتجربة ألعاب رقمية بتصميم احترافي.">
+<title>RedPlay — عالم الألعاب بتجربة مختلفة</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -64,6 +64,239 @@ body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none
 .telegram-panel::before{content:"✈";position:absolute;z-index:-1;left:5%;top:50%;transform:translateY(-50%) rotate(-15deg);font-size:clamp(76px,13vw,130px);color:#ff3048;opacity:.10;pointer-events:none}
 .telegram-copy{max-width:700px}.telegram-kicker{display:inline-flex;align-items:center;gap:7px;color:#ff7b8b;font-size:12px;font-weight:900;letter-spacing:.2px}.telegram-panel h2{margin:8px 0;font-size:clamp(21px,3.4vw,30px);font-weight:900}.telegram-panel p{margin:0;color:#c8b8bc;line-height:1.9;font-size:14px}.telegram-cta{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:14px;text-decoration:none;color:#fff;font-weight:900;background:linear-gradient(135deg,#ff5368,#b5122b);box-shadow:0 9px 28px #ff304833;transition:transform .2s,box-shadow .2s}.telegram-cta:hover{transform:translateY(-3px);box-shadow:0 13px 32px #ff304855}.telegram-cta svg{width:21px;height:21px;fill:currentColor}
 @media(max-width:680px){.telegram-nav{padding:8px 10px;font-size:12px}.telegram-panel{align-items:stretch;flex-direction:column;gap:17px;border-radius:20px}.telegram-cta{width:100%}}
+
+
+/* ================= REDPLAY NEXUS — PREMIUM VISUAL REFRESH ================= */
+:root{
+ --red:#ff2448;--red2:#ff637d;--bg:#070609;--panel:#100d12;--panel2:#181219;
+ --line:rgba(255,255,255,.095);--muted:#b9aab1;--radius:26px;
+ --glow:0 0 34px rgba(255,36,72,.22)
+}
+html{scroll-padding-top:110px}
+body{
+ background:
+  radial-gradient(ellipse at 8% 8%,rgba(255,25,65,.18),transparent 34rem),
+  radial-gradient(ellipse at 92% 36%,rgba(120,15,55,.13),transparent 36rem),
+  linear-gradient(180deg,#080609 0%,#0c080d 52%,#080609 100%);
+}
+body::after{
+ content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.15;
+ background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+ background-size:54px 54px;
+ mask-image:linear-gradient(to bottom,black,transparent 82%);
+}
+.shell{width:min(1320px,93%)}
+header{
+ background:rgba(8,6,9,.78);backdrop-filter:blur(24px) saturate(150%);
+ border-bottom:1px solid rgba(255,54,87,.2);
+ box-shadow:0 12px 42px rgba(0,0,0,.28)
+}
+.bar{min-height:88px;gap:18px}
+.logo{font-size:30px;letter-spacing:-1.3px;text-shadow:0 4px 22px #ff244833}
+.logo b{
+ padding:4px 11px;border-radius:12px;
+ background:linear-gradient(135deg,#ff526d,#c10d32 75%);
+ box-shadow:0 8px 28px #ff244844,inset 0 1px #ffffff55
+}
+.search{max-width:570px}
+.search input{
+ min-height:52px;border-radius:17px;padding-inline:48px 18px;
+ background:linear-gradient(145deg,rgba(31,23,30,.92),rgba(15,12,17,.94));
+ border:1px solid rgba(255,255,255,.11);box-shadow:inset 0 1px #ffffff08;
+ transition:.25s
+}
+.search input:focus{border-color:#ff4968;box-shadow:0 0 0 4px #ff24481b,0 8px 28px #ff244815}
+.nav-link,.telegram-nav{
+ padding:13px 19px;border-radius:15px;
+ background:linear-gradient(135deg,#ff3b5d,#c10e34);
+ box-shadow:0 9px 25px #ff24482b,inset 0 1px #ffffff3a;
+ transition:transform .25s,box-shadow .25s
+}
+.nav-link:hover,.telegram-nav:hover{transform:translateY(-3px);box-shadow:0 14px 34px #ff24484a}
+.hero{
+ min-height:465px;margin-top:30px;border-radius:34px;
+ border:1px solid rgba(255,83,112,.28);
+ background:linear-gradient(120deg,#1c0b13 0%,#100b12 56%,#09080c 100%);
+ box-shadow:0 30px 100px #0009,0 0 0 1px #ff24480c,var(--glow)
+}
+.hero::before{
+ background:
+  radial-gradient(ellipse at 18% 52%,#ff24484d,transparent 38%),
+  radial-gradient(ellipse at 82% 12%,#7b164a38,transparent 34%),
+  linear-gradient(125deg,#260b17,#100b12 60%,#08070a);
+ animation:heroGlow 10s ease-in-out infinite alternate
+}
+.hero::after{
+ background:linear-gradient(90deg,rgba(8,6,9,.04),rgba(8,6,9,.87) 76%),
+ linear-gradient(110deg,transparent 35%,rgba(255,255,255,.08) 48%,transparent 60%);
+ background-size:100% 100%,230% 100%;
+ animation:heroSweep 10s ease-in-out infinite
+}
+.slide{padding:clamp(28px,6vw,76px)}
+.hero-copy{max-width:640px}
+.eyebrow{
+ padding:8px 15px;border-radius:999px;font-size:13px;letter-spacing:.2px;
+ background:rgba(255,36,72,.13);border-color:#ff496855;
+ box-shadow:inset 0 1px #ffffff12,0 5px 22px #ff244812
+}
+.hero h1{
+ font-size:clamp(38px,6vw,70px);line-height:1.12;
+ text-shadow:0 10px 35px #0009;letter-spacing:-1.8px
+}
+.hero p{font-size:clamp(14px,1.6vw,17px);line-height:2;color:#d7c9cf}
+.hero-art.has-cover{
+ border-radius:24px;border:1px solid #ff789055;
+ box-shadow:0 25px 55px #000b,0 0 45px #ff24482b;
+ transform:translateY(-50%) perspective(900px) rotateY(5deg)
+}
+.hero-art.has-cover img{border:0;border-radius:24px;filter:saturate(1.08) contrast(1.04)}
+.primary,.secondary{
+ min-height:52px;border-radius:15px;padding:13px 22px;
+ box-shadow:0 10px 28px #0005
+}
+.primary{background:linear-gradient(135deg,#ff536f,#df123b);box-shadow:0 12px 30px #ff244838,inset 0 1px #ffffff50}
+.secondary{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(12px)}
+.cats{
+ padding:25px 2px 12px;gap:12px;scroll-padding-inline:12px
+}
+.cat{
+ position:relative;padding:13px 20px;border-radius:16px;
+ background:linear-gradient(145deg,rgba(28,20,27,.95),rgba(14,11,15,.95));
+ border:1px solid rgba(255,255,255,.10);box-shadow:0 7px 22px #0003;
+ transition:transform .25s,border-color .25s,background .25s
+}
+.cat:hover{transform:translateY(-3px)}
+.cat.on{background:linear-gradient(135deg,#42111e,#1a0c12);border-color:#ff4968;box-shadow:0 0 0 1px #ff244822,0 10px 28px #ff24481a}
+.section-head{margin:43px 0 18px;align-items:center}
+.section-title{font-size:clamp(23px,3.2vw,31px);letter-spacing:-.4px}
+.section-title::before{width:6px;height:31px;box-shadow:0 0 20px #ff2448aa}
+.section-note{font-size:13px;color:#c1aeb6}
+.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,235px),1fr));gap:20px}
+.game-card{
+ aspect-ratio: .91 / 1;min-height:290px;border-radius:24px;
+ border:1px solid rgba(255,255,255,.10);
+ background:linear-gradient(145deg,var(--c1),var(--c2));
+ box-shadow:0 14px 38px rgba(0,0,0,.35);
+ transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s
+}
+.game-card::before{
+ z-index:0;pointer-events:none;
+ background:linear-gradient(180deg,rgba(0,0,0,.02) 5%,rgba(0,0,0,.05) 38%,rgba(5,4,7,.90) 100%),
+ radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.12),transparent 60%)
+}
+.game-card:hover{
+ transform:translateY(-8px) scale(1.012);
+ border-color:#ff5574a8;
+ box-shadow:0 24px 55px #0009,0 0 30px #ff24481e
+}
+.game-art{inset:0;z-index:-1;font-size:clamp(70px,9vw,105px)}
+.game-art img{opacity:1;filter:saturate(1.08);transition:transform .55s cubic-bezier(.2,.8,.2,1),filter .35s}
+.game-card:hover .game-art img{transform:scale(1.07);filter:saturate(1.2) contrast(1.04)}
+.game-card:has(.game-art img)::before{
+ z-index:0;background:linear-gradient(180deg,rgba(0,0,0,.03) 15%,rgba(0,0,0,.04) 40%,rgba(5,4,7,.94) 100%)
+}
+.game-badge{
+ top:14px;inset-inline-start:14px;padding:6px 11px;border-radius:999px;
+ backdrop-filter:blur(12px);border:1px solid #ffffff22;
+ box-shadow:0 6px 18px #0005;font-size:10px
+}
+.game-info{
+ z-index:2;padding:18px 17px 17px;
+ background:linear-gradient(0deg,rgba(7,5,8,.98),rgba(7,5,8,.82) 72%,transparent);
+}
+.game-info strong{font-size:clamp(15px,1.7vw,18px);line-height:1.55;text-shadow:0 2px 10px #000}
+.game-info span{font-size:13px;color:#d0bdc5;line-height:1.8}
+.card-play{z-index:3;width:52px;height:52px;background:linear-gradient(135deg,#ff536f,#d40d36);box-shadow:0 10px 32px #ff244866}
+.row{gap:18px;padding:8px 2px 22px}
+.row .game-card{flex:0 0 clamp(210px,25vw,260px)}
+.hint{
+ margin-top:36px;padding:24px 25px;border-radius:22px;
+ background:linear-gradient(120deg,rgba(29,18,26,.94),rgba(14,11,16,.94));
+ border:1px solid rgba(255,255,255,.10);box-shadow:0 15px 42px #0004;
+ font-size:14px;line-height:2
+}
+.hint>span{font-size:26px;filter:drop-shadow(0 0 12px #ff2448)}
+.telegram-panel{
+ margin-top:26px;padding:clamp(25px,4.5vw,45px);border-radius:30px;
+ background:radial-gradient(ellipse at 92% 12%,#ff304832,transparent 44%),linear-gradient(125deg,#1d1119,#0b0b11 72%);
+ border:1px solid #ff49683c;box-shadow:0 24px 70px #0006,0 0 30px #ff24480b
+}
+.telegram-panel h2{font-size:clamp(24px,3.5vw,34px)}
+.telegram-panel p{font-size:15px;line-height:2}
+.telegram-cta{padding:16px 25px;border-radius:17px;font-size:16px}
+.stats{gap:16px;margin:48px 0 18px}
+.stat{
+ position:relative;overflow:hidden;padding:26px 18px;border-radius:22px;
+ background:linear-gradient(145deg,rgba(30,20,28,.95),rgba(13,10,14,.98));
+ border:1px solid rgba(255,255,255,.10);box-shadow:0 14px 35px #0004
+}
+.stat::before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#ff4968,transparent);opacity:.8}
+.stat b{font-size:34px;text-shadow:0 0 25px #ff244866}
+.stat span{font-size:13px}
+footer{border-color:#ffffff16;margin-top:58px;background:rgba(8,6,9,.55)}
+dialog{border-radius:27px;border-color:#ff496866;box-shadow:0 35px 120px #000e,0 0 45px #ff24481a}
+.modal-head{background:rgba(23,15,21,.96);backdrop-filter:blur(15px)}
+.modal-body{line-height:1.9}
+.toast{border:1px solid #ff496866!important;box-shadow:0 15px 45px #0009,0 0 25px #ff244822!important;backdrop-filter:blur(18px)}
+/* entrance and light effects */
+@keyframes rpFloatGlow{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes rpBorder{0%,100%{border-color:rgba(255,255,255,.10)}50%{border-color:rgba(255,73,104,.42)}}
+.game-card{animation:cardEnter .65s both,rpBorder 7s ease-in-out infinite}
+.game-card:nth-child(2n){animation-delay:.08s,.6s}
+.game-card:nth-child(3n){animation-delay:.16s,1.2s}
+.hero-art.has-cover{animation:rpFloatGlow 6s ease-in-out infinite,artGlow 4s ease-in-out infinite alternate}
+@media(max-width:760px){
+ .shell{width:min(100% - 28px,620px)}
+ .bar{
+  display:grid;grid-template-columns:1fr auto;grid-template-areas:"brand telegram" "explore explore" "search search";
+  gap:11px;padding:13px 0 15px;min-height:0
+ }
+ .logo{grid-area:brand;font-size:27px;justify-self:start}
+ .telegram-nav{grid-area:telegram;justify-self:end;margin:0;padding:10px 14px}
+ .nav-link{grid-area:explore;justify-self:stretch;margin:0;text-align:center;padding:11px 15px}
+ .search{grid-area:search;max-width:none;width:100%}
+ .search input{min-height:54px;border-radius:16px}
+ header{top:0}
+ .hero{min-height:425px;margin-top:18px;border-radius:26px}
+ .slide{padding:27px 22px 75px}
+ .hero-copy{max-width:100%}
+ .hero h1{font-size:clamp(32px,8vw,48px);max-width:92%}
+ .hero p{max-width:94%;font-size:13px}
+ .hero-art.has-cover{width:43%;height:45%;left:3%;top:27%;opacity:.72}
+ .hero::after{background:linear-gradient(90deg,rgba(8,6,9,.42),rgba(8,6,9,.88) 78%)}
+ .hero-actions{margin-top:18px;gap:9px}
+ .primary,.secondary{padding:11px 15px;min-height:47px;font-size:13px}
+ .cats{padding:19px 1px 9px;gap:9px}
+ .cat{padding:11px 15px;font-size:13px}
+ .section-head{margin:32px 0 14px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .game-card{min-height:0;aspect-ratio:.83/1;border-radius:19px}
+ .game-info{padding:13px 12px}
+ .game-info strong{font-size:13px}
+ .game-info span{font-size:11px}
+ .game-badge{top:9px;inset-inline-start:9px;padding:5px 8px;font-size:9px}
+ .card-play{width:42px;height:42px}
+ .hint{padding:18px;border-radius:19px;font-size:12px}
+ .telegram-panel{padding:23px;border-radius:23px}
+ .telegram-cta{width:100%;min-height:54px}
+ .stats{gap:9px;margin-top:34px}
+ .stat{padding:18px 8px;border-radius:17px}
+ .stat b{font-size:27px}
+ .stat span{font-size:10px}
+}
+@media(max-width:380px){
+ .shell{width:calc(100% - 22px)}
+ .grid{gap:9px}
+ .game-card{aspect-ratio:.78/1}
+ .game-info{padding:11px 9px}
+ .game-info strong{font-size:12px}
+ .game-info span{font-size:10px}
+ .logo{font-size:24px}
+ .telegram-nav{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+ .game-card,.hero-art.has-cover{animation:none!important}
+}
 
 </style>
 </head>
